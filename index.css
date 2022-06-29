@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body
+{
+    height: 900px;
+    counter-reset:game;
+}
+.contenedor 
+{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 60px;
+    border-radius: 30px;
+    height: 600px;
+    width: 700px;
+    background: linear-gradient(#08AEEA, #2AF598);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.55);
+}
+label img
+{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    
+}
+.Charmander 
+{
+    position: absolute;
+    z-index: 1;
+    height: 500px;
+    width: 90px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    right: 215px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%, 100% 
+    {
+        transform: translateY(200px);
+    }
+    50% 
+    {
+        transform: translateY(460px);
+    }
+}
+.Cubone 
+{
+    position: absolute;
+    z-index: 1;
+    height: 500px;
+    width: 90px;
+    background-size: 100px 100px;
+    background-repeat:no-repeat;
+    right: 380px;
+    animation: animate1 8s linear infinite;
+}
+
+@keyframes animate1
+{
+    0%, 100% 
+    {
+        transform: translateY(50px);
+    }
+    50% 
+    {
+        transform: translateY(330px);
+    }
+}
+
+.Butterfree 
+{
+    position: absolute;
+    z-index: 1;
+    height: 500px;
+    width: 90px;
+    background-size: 100px 100px;
+    background-repeat:no-repeat;
+    right: 550px;
+    animation: animate2 7s linear infinite;
+}
+
+@keyframes animate2
+{
+    0%, 100% 
+    {
+        transform: translateY(100px);
+    }
+    50% 
+    {
+        transform: translateY(280px);
+    }
+}
+.Mewtwo 
+{
+    position: absolute;
+    z-index: 1;
+    height: 550px;
+    width: 100px;
+    background-size: 120px 120px;
+    background-repeat:no-repeat;
+    right: 70px;
+    animation: animate3 6s linear infinite;
+}
+@keyframes animate3
+{
+    0%, 100% 
+    {
+        transform: translateY(1px);
+    }
+    50% 
+    {
+        transform: translateY(250px);
+    }
+}
+.mon-1 
+{
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    width: 200px;
+    height: 390px;
+    background: linear-gradient(0deg, rgba(46,181,46,1) 61%, rgba(161,85,60,1) 100%);
+    box-shadow: 0 0px 10px rgb(30, 30, 31);
+    border-radius: 20px;
+    bottom: 0;   
+}
+
+.mon-2 
+{
+    position: absolute;
+    z-index: 3;
+    left: 180px;
+    height: 295px;
+    width: 200px;
+    background: linear-gradient(0deg, rgba(4,148,4,1) 61%, rgba(161,85,60,1) 100%);
+    box-shadow: 0 0px 10px rgb(30, 30, 31);
+    border-radius: 20px;
+    bottom: 0;
+    right: 100px;
+
+}
+.mon-3 
+{
+    position: absolute;
+    z-index: 4;
+    left: 360px;
+    width: 170px;
+    height: 174px;
+    background: linear-gradient(0deg, rgba(23,122,23,1) 61%, rgba(161,85,60,1) 100%);
+    box-shadow: 0 0px 10px rgb(30, 30, 31);
+    border-radius: 20px;
+    bottom: 0;
+}
+.mon-4 
+{
+    position: absolute;
+    z-index: 3;
+    left: 510px;
+    width: 170px;
+    height: 350px;
+    background: linear-gradient(0deg, rgba(73,189,73,1) 61%, rgba(161,85,60,1) 100%);
+    box-shadow: 0 0px 10px rgb(30, 30, 31);
+    border-radius: 20px;
+    bottom: 0;
+}
+.zigzag 
+{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(135deg, #329634 25%, transparent 25%) -17px 0,
+    linear-gradient(-135deg, #329634 25%, transparent 25%) -17px 0,
+    linear-gradient(45deg, #19811b00 25%, #a1553c 25%),
+    linear-gradient(-45deg, #25972700 25%, #a1553c 25%);
+    background-size: 35px 35px;
+    border-radius: 20%;
+}
+.Titulo
+{
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 80px;
+    background: rgb(23, 145, 78);
+    bottom: 0;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Sniglet';
+}
+
+/*Contador*/
+.total-count
+{
+    font-family: 'Sniglet';
+    color: white;
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 0;
+}
+input:checkbox 
+{
+    cursor: pointer;
+    counter-increment: game;
+}
+.total-count::after 
+{
+    content: counter(game);
+}
+input:checked + label
+{
+    counter-increment: game;
+}
+input[type=checkbox]
+{
+  display: none;
+  counter-increment: game;
+}
+
+/*Tarjetas del lado*/
+.contenedor-3
+{
+    position: absolute;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    left: 860px;
+    top: 450px;
+}
+
+.contenedor-2
+{
+    position: absolute;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    left: 860px;
+    top: 200px;
+}
+.contenedores .box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: var(--clr);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgb(30, 30, 31);
+    margin: 5px;
+}
+.contenedores:hover .box
+{
+    transform: rotateY(45deg);
+}
+.contenedores:hover .box ~ .box
+{
+    transform: rotateY(0deg) scale(1.10);
+}
+.contenedores .box:hover 
+{
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(30, 30, 31);
+}
+.contenedores .box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenedores .box .imgBx:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(64, 70, 69, 0.486), rgba(44, 67, 77, 0.363) );
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+}
+.contenedores .box:hover .imgBx:before
+{
+    opacity: 1;
+}
+.contenedores .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenedores .box .content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.contenedores .box .content h2
+{
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateX(200px);
+    font-family: 'Sniglet';
+}
+.contenedores .box:hover .content h2
+{
+    transform: translateX(0px);
+    transition-delay: 0.6s;
+}
+.contenedores .box .content p
+{
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    font-family: 'Sniglet';
+}
+.contenedores .box:hover .content p
+{
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+}
+.wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 40px;  
+}

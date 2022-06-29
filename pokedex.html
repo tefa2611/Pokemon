@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ff17098bd.js" crossorigin="anonymous"></script>
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="./img/logomini.png">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+<body> 
+
+    <!--Menú-->
+    
+   <div class="menu">
+    <ul>
+        <li class="list" style="--clr:#A9C9FF">
+            <a href="./index.html">
+                <span class="icono"><ion-icon name="game-controller-outline"></ion-icon></span>
+            </a>
+        </li>
+        <li class="list active" style="--clr:#FAACA8">
+            <a href="#">
+                <span class="icono"><ion-icon name="id-card-outline"></ion-icon></span>
+            </a>
+        </li>
+        <li class="list" style="--clr:#DDD6F3">
+            <a href="./Inicio.html"">
+                <span class="icono"><ion-icon name="home-outline"></ion-icon></span>
+            </a>
+        </li>
+        <div class="indicador"></div>
+    </ul>
+   </div>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+<script>
+    const list = document.querySelectorAll('.list'); 
+    function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active')
+    } 
+    list.forEach((item) =>
+    item.addEventListener('click',activeLink))
+</script>
+
+<!--Cards-->
+
+<div class="contenedor  wrapper">
+
+    <div class="card" style="--clr:linear-gradient(#64E2C1, #4EAC8D, #0A5E47)">
+        <div class="img1">
+            <img src="./img/001.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#0A513D">Bulbasaur<span style="--clr:#299F3A"><br>Altura: 0,7 m <br>Peso: 6,9 kg<br>Sexo: ♀ ♂<br>Categoría: Semilla<br>Habilidad: Espesura<br>Tipo: Planta - Veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card" style="--clr:linear-gradient(#53B2B9, #5E9C28, #F66D7B)">
+        <div class="img1">
+            <img src="./img/002.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#103E4B">Ivysaur<span style="--clr:#447309"><br>Altura: 1,0 m<br>Peso: 13 kg<br>Sexo: ♀ ♂<br>Categoría: Semilla<br>Habilidad: Espesura<br>Tipo: Planta - Veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#62A1A7, #C28736, #F7B53D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/003.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#F7B53D">Venusaur<span style="--clr:#CE932A"><br>Altura: 2 m<br>Peso: 100 kg<br>Sexo: ♀ ♂<br>Categoría: Semilla<br>Habilidad: Espesura<br>Tipo: Planta - Veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card" style="--clr:linear-gradient(#E16E40, #EBAB7E, #F3E5CA)">
+        <div class="img1">
+            <img src="./img/004.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#33768B">Charmander<span style="--clr:#0E1618"><br>Altura: 0,6 m<br>Peso: 8,5 kg<br>Sexo: ♀ ♂<br>Categoría: Lagartija<br>Habilidad: Mar de llamas<br>Tipo: Fuego<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#C55D4D, #DC4D3A, #E6C8B8)">
+        <div class="img1">
+            <img src="./img/005.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#33768B">Charmeleon<span style="--clr:#012433"><br>Altura: 1,1 m<br>Peso: 19 kg<br>Sexo: ♀ ♂<br>Categoría: Llama<br>Habilidad: Mar llamas<br>Tipo: Fuego<br>Debilidad: Agua, Tierra y Roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#A96D4B, #EC9F5F, #FCE9AE)">
+        <div class="img1">
+            <img src="./img/006.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#0D5E6D">Charizard<span style="--clr:#007386"><br>Altura: 1,7 m<br>Peso: 90,5 kg<br>Sexo: ♀ ♂<br>Categoría: Llama<br>Habilidad: Mar llamas<br>Tipo: Fuego y volador<br>Debilidad: Agua, eléctrico y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#A97867, #A97867, #679EB0)">
+        <div class="img1">
+            <img src="./img/007.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Squirtle<span style="--clr:#241419"><br>Altura: 0,5 m<br>Peso: 9 kg<br>Sexo: ♀ ♂<br>Categoría: Tortuguita<br>Habilidad: Torrente<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#6E8EBD, #8F7C6B, #A7988D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/008.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#93665E">Wartortle<span style="--clr:#381912"><br>Altura: 1,0 m<br>Peso: 22,5 kg<br>Sexo: ♀ ♂<br>Categoría: Tortuga<br>Habilidad: Torrente<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#715D4F, #9E8269, #617291)">
+        <div class="img1">
+            <img src="./img/009.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#7B634A">Blastoise<span style="--clr:#2A2D37"><br>Altura: 1,6 m<br>Peso: 85,5 kg<br>Sexo: ♀ ♂<br>Categoría: Armazón<br>Habilidad: Torrente<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#8AC979, #FFC1AA, #F8DF95)"> 
+        <div class="img1">
+            <img src="./img/010.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#BF6749">Caterpie<span style="--clr:#AC9D73"><br>Altura: 0,3 m<br>Peso: 2,9 kg<br>Sexo: ♀ ♂<br>Categoría: Gusano<br>Habilidad: Polvo escudo<br>Tipo: Bicho<br>Debilidad: Fuego, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#ADCC76, #83A751, #6C8650)">
+        <div class="img1">
+            <img src="./img/011.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#6C8650">Metapod<span style="--clr:#1E181E"><br>Altura: 0,7 m<br>Peso: 9,9 kg<br>Sexo: ♀ ♂<br>Categoría: Capullo<br>Habilidad: Mudar<br>Tipo: Bicho<br>Debilidad: Fuego, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #D9776E, #90B7C6)">
+        <div class="img1">
+            <img src="./img/012.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#B95048">Butterfree<span style="--clr:#D9766E"><br>Altura: 1,1 m<br>Peso: 32 kg<br>Sexo: ♀ ♂<br>Categoría: Mariposa<br>Habilidad: Ojo compuesto<br>Tipo: Bicho volador<br>Debilidad: Fuego, volador, eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#956E51, #AB8054, #DDC5AB)">
+        <div class="img1">
+            <img src="./img/013.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#AD7288">Weedle<span style="--clr:#080304"><br>Altura: 0,3 m<br>Peso: 3,2 kg<br>Sexo: ♀ ♂<br>Categoría: Oruga<br>Habilidad: Polvo Escudo<br>Tipo: Bicho y veneno<br>Debilidad: Fuego, psíquico, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#B69A53, #E5CE76, #FCECAE)">
+        <div class="img1">
+            <img src="./img/014.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#3B3536">Kakuna<span style="--clr:#150F11"><br>Altura: 0,6 m<br>Peso: 10 kg<br>Sexo: ♀ ♂<br>Categoría: Capullo<br>Habilidad: Mudar<br>Tipo: Bicho y veneno<br>Debilidad: Fuego, psíquico, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#C19A54, #5D576F, #9C9BAA)">
+        <div class="img1">
+            <img src="./img/015.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#B84750">Beedrill<span style="--clr:#EFB0A6"><br>Altura: 1,0 m<br>Peso: 29,5 kg<br>Sexo: ♀ ♂<br>Categoría: Abeja veneno<br>Habilidad: Enjambre<br>Tipo: Bicho y veneno<br>Debilidad: Fuego, psíquico, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#784E2E, #B99360, #C5B78F)">
+        <div class="img1">
+            <img src="./img/016.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#AE858C">Pidgey<span style="--clr:#372B27"><br>Altura: 0,3 m<br>Peso: 1,8 kg<br>Sexo: ♀ ♂<br>Categoría: Pajarito<br>Habilidad: Vista lince tumbos<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#F4C978, #E37962, #AC888B)">
+        <div class="img1">
+            <img src="./img/017.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#AE858C">Pidgeotto<span style="--clr:#372B27"><br>Altura: 1,1 m<br>Peso: 30 kg<br>Sexo: ♀ ♂<br>Categoría: Pájaro<br>Habilidad: Vista lince tumbos<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#AC888B, #E37962, #F4C978)">
+        <div class="img1">
+            <img src="./img/018.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#AE858C">Pidgeot<span style="--clr:#372B27"><br>Altura: 1,5 m<br>Peso: 39,5 kg<br>Sexo: ♀ ♂<br>Categoría: Pájaro<br>Habilidad: Vista lince tumbos<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/019.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Rattata<span style="--clr:#241419"><br>Altura: 0,3 m<br>Peso: 3,5 kg<br>Sexo: ♀ ♂<br>Categoría: Ratón<br>Habilidad: Fuga agallas<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/020.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Raticate<span style="--clr:#241419"><br>Altura: 0,7 m<br>Peso: 18,5 kg<br>Sexo: ♀ ♂<br>Categoría: Ratón<br>Habilidad: Fuga Agallas<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/021.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Spearow<span style="--clr:#241419"><br>Altura: 0,3 m<br>Peso: 2,0 kg<br>Sexo: ♀ ♂<br>Categoría: Pajarito<br>Habilidad: Vista lince<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/022.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Fearow<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 38 kg<br>Sexo: ♀ ♂<br>Categoría: Pico<br>Habilidad: Vista lince<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/023.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Ekans<span style="--clr:#241419"><br>Altura: 2 m<br>Peso: 6,9 kg<br>Sexo: ♀ ♂<br>Categoría: Serpiente<br>Habilidad: Mudar imitación<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/024.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Arbok<span style="--clr:#241419"><br>Altura: 3,5 m<br>Peso: 65 kg<br>Sexo: ♀ ♂<br>Categoría: Cobra<br>Habilidad: Mudar imitación<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/025.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Pikachu<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 6 kg<br>Sexo: ♀ ♂<br>Categoría: Ratón<br>Habilidad: Electricidad estática<br>Tipo: Eléctrico<br>Debilidad: Tierra</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/026.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Raichu<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 30 kg<br>Sexo: ♀ ♂<br>Categoría: Ratón<br>Habilidad: Electricidad estática<br>Tipo: Eléctrico<br>Debilidad: Tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/027.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Sandshrew<span style="--clr:#241419"><br>Altura: 0,6 m<br>Peso: 12 kg<br>Sexo: ♀ ♂<br>Categoría: Ratón<br>Habilidad: Velo arena<br>Tipo: Tierra<br>Debilidad: Agua, planta y hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/028.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Sandslash<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 29,5 kg<br>Sexo: ♀ ♂<br>Categoría: Ratón<br>Habilidad: Velo arena<br>Tipo: Tierra<br>Debilidad: Agua, planta y hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/029.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Nidoran<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 7,0 kg<br>Sexo: ♀<br>Categoría: Pin veneno<br>Habilidad: Punto tóxico rivalidad<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/030.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Nidorina<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 20 kg<br>Sexo: ♀<br>Categoría: Pin veneno<br>Habilidad: Punto tóxico rivalidad<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/031.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Nidoqueen<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 60 kg<br>Sexo: ♀ ♂<br>Categoría: Taladro<br>Habilidad: Punto tóxico rivalidad<br>Tipo: Veneno tierra <br>Debilidad: Agua, psíquico, hielo y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/032.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Nidoran<span style="--clr:#241419"><br>Altura: 0,5 m<br>Peso: 9,0 kg<br>Sexo: ♂<br>Categoría: Pin veneno<br>Habilidad: Punto tóxico rivalidad<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/033.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Nidorino<span style="--clr:#241419"><br>Altura: 0,0 m<br>Peso: 19,5 kg<br>Sexo: ♂<br>Categoría: Pin veneno<br>Habilidad: Punto tóxico rivalidad<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/034.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Nidoking<span style="--clr:#241419"><br>Altura: 1,4 m<br>Peso: 62 kg<br>Sexo: ♂<br>Categoría: Taladro<br>Habilidad: Punto tóxico rivalidad<br>Tipo: Veneno y tierra<br>Debilidad: Agua, psíquico, hielo y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/035.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Clefairy<span style="--clr:#241419"><br>Altura: 0,6 m<br>Peso: 7,5 kg<br>Sexo: ♀ ♂<br>Categoría: Hada<br>Habilidad: Gran encanto muro mágico<br>Tipo: Hada<br>Debilidad: Acero y veneno.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/036.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Clefable<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 40 kg<br>Sexo: ♀ ♂<br>Categoría: Hada<br>Habilidad: Gran encanto muro mágico<br>Tipo: Hada<br>Debilidad: Acero y veneno.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/037.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Vulpix<span style="--clr:#241419"><br>Altura: 0,6 m<br>Peso: 9,9 kg<br>Sexo: ♀ ♂<br>Categoría: Zorro<br>Habilidad: Absorbe fuego<br>Tipo: Fuego<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/038.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Ninetales<span style="--clr:#241419"><br>Altura: 1,1 m<br>Peso: 19,9 kg<br>Sexo: ♀ ♂<br>Categoría: Zorro<br>Habilidad: Absorbe fuego<br>Tipo: Fuego<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/039.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Jigglypuff<span style="--clr:#241419"><br>Altura: 0,5 m<br>Peso: 5,5 kg<br>Sexo: ♀ ♂<br>Categoría: Globo<br>Habilidad: Gran encanto tenacidad<br>Tipo: Normal y hada<br>Debilidad: Acero y veneno.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/040.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Wigglytuff<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 12,0 kg<br>Sexo: ♀ ♂<br>Categoría: Globo<br>Habilidad: Gran encanto tenancidad<br>Tipo: Normal y hada<br>Debilidad: Acero y veneno.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/041.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Zubat<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 7,5 kg<br>Sexo: ♀ ♂<br>Categoría: Murciélago<br>Habilidad: Foco interno<br>Tipo: Veneno y volar<br>Debilidad: Psíquico, eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/042.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Golbat<span style="--clr:#241419"><br>Altura: 1,6 m<br>Peso: 55 kg<br>Sexo: ♀ ♂<br>Categoría: Murciélago<br>Habilidad: Foco interno<br>Tipo: Veneno y volador<br>Debilidad: Psíquico, eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/043.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Oddish<span style="--clr:#241419"><br>Altura: 0,5 m<br>Peso: 5,4 kg<br>Sexo: ♀ ♂<br>Categoría: Hierbajo<br>Habilidad: Clorofila<br>Tipo: Planta y veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/044.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Gloom<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 8,6 kg<br>Sexo: ♀ ♂<br>Categoría: Hierbajo<br>Habilidad: Clorofila<br>Tipo: Planta y veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/045.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Vileplume<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 18,6 kg<br>Sexo: ♀ ♂<br>Categoría: Flor<br>Habilidad: Clorofila<br>Tipo: Planta y veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/046.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Paras<span style="--clr:#241419"><br>Altura: 0,3 m<br>Peso: 5,4 kg<br>Sexo: ♀ ♂<br>Categoría: Hongo<br>Habilidad: Efecto espora y piel seca<br>Tipo: Bicho y planta<br>Debilidad: Fuego, volador, hielo, veneno, roca y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/047.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Parasect<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 29,5 kg<br>Sexo: ♀ ♂<br>Categoría: Hongo<br>Habilidad: Efecto espora y piel seca<br>Tipo: Bicho planta<br>Debilidad: Fuego, volador, hielo, veneno, roca y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/048.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Venonat<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 30 kg<br>Sexo: ♀ ♂<br>Categoría: Insecto<br>Habilidad: Ojo compuesto cromolente<br>Tipo: Bicho veneno<br>Debilidad: Fuego, psíquico, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/049.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Venomoth<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 12,5 kg<br>Sexo: ♀ ♂<br>Categoría: Polilla venenosa<br>Habilidad: Polvo escudo cromolente<br>Tipo: Bicho y veneno<br>Debilidad: Fuego, psíquico, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/050.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Diglett<span style="--clr:#241419"><br>Altura: 0,2 m<br>Peso: 0,8 kg<br>Sexo: ♀ ♂<br>Categoría: Topo<br>Habilidad: Velo y trampa arena <br>Tipo: Tierra<br>Debilidad: Agua, planta e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/051.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Dugtrio<span style="--clr:#241419"><br>Altura: 0,7 m<br>Peso: 33,3 kg<br>Sexo: ♀ ♂<br>Categoría: Topo<br>Habilidad: Velo y trampa arena<br>Tipo: Tierra<br>Debilidad: Agua, planta e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/052.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Meowth<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 4,2 kg<br>Sexo: ♀ ♂<br>Categoría: Gato araña<br>Habilidad: Recogida y experto<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/053.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Persian<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 32 kg<br>Sexo: ♀ ♂<br>Categoría: Gato fino<br>Habilidad: Experto y flexibilidad<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/054.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Psyduck<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 19,6 kg<br>Sexo: ♀ ♂<br>Categoría: Pato<br>Habilidad: Humedad aclimatación<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/055.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Golduck<span style="--clr:#241419"><br>Altura: 1,7 m<br>Peso: 76,6 kg<br>Sexo: ♀ ♂<br>Categoría: Pato<br>Habilidad: Humedad y aclimatación<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/056.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Mankey<span style="--clr:#241419"><br>Altura: 0,5 m<br>Peso: 28 kg<br>Sexo: ♀ ♂<br>Categoría: Mono cerdo<br>Habilidad: Espíritu vital e irascible <br>Tipo: Lucha<br>Debilidad: Psíquico, volador y hada.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/057.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Primeaope<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 32,0 kg<br>Sexo: ♀ ♂<br>Categoría: Mono cerdo<br>Habilidad: Esp vital e irascible<br>Tipo: Lucha<br>Debilidad: Psíquico, volador y hada.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/058.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Growlithe<span style="--clr:#241419"><br>Altura: 0,7 m<br>Peso: 19 kg<br>Sexo: ♀ ♂<br>Categoría: Perrito<br>Habilidad: Intimidación y absorbe fuego<br>Tipo: Lucha<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/059.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Arcanine<span style="--clr:#241419"><br>Altura: 1,9 m<br>Peso: 155 kg<br>Sexo: ♀ ♂<br>Categoría: Leyenda<br>Habilidad: Intimidación y absorbe fuego<br>Tipo: Lucha<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/060.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Poliwag<span style="--clr:#241419"><br>Altura: 0,6 m<br>Peso: 12,4 kg<br>Sexo: ♀ ♂<br>Categoría: Renacuajo<br>Habilidad: Humedad y absorbe agua<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/061.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Poliwhirl<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 20 kg<br>Sexo: ♀ ♂<br>Categoría: Renacuajo<br>Habilidad: Humedad y absorbe agua<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/062.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Poliwrath<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 54 kg<br>Sexo: ♀ ♂<br>Categoría: Renacuajo<br>Habilidad: Humedad y absorbe agua<br>Tipo: Agua y lucha<br>Debilidad: Hada, planta, volador, psíquico y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/063.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Abra<span style="--clr:#241419"><br>Altura: 0,9 m<br>Peso: 19,5 kg<br>Sexo: ♀ ♂<br>Categoría: Psi<br>Habilidad: Foco interno y sincronía<br>Tipo: Psíquico<br>Debilidad: Fantasma, siniestro y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/064.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Kadabra<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 56,5 kg<br>Sexo: ♀ ♂<br>Categoría: Psi<br>Habilidad: Foco interno y sincronía<br>Tipo: Psíquico<br>Debilidad: Fantasma, siniestro y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/065.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Alakazam<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 48 kg<br>Sexo: ♀ ♂<br>Categoría: Psi<br>Habilidad: Foco interno y sincronía<br>Tipo: Psíquico<br>Debilidad: Fantasma, siniestro y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/066.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Machop<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 19,5 kg<br>Sexo: ♀ ♂<br>Categoría: Superpoder<br>Habilidad: Agallas e indefenso<br>Tipo: Lucha<br>Debilidad: Psíquico, volador y hada.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/067.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Machoke<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 70,5 kg<br>Sexo: ♀ ♂<br>Categoría: Superpoder<br>Habilidad: Agallas e indefenso<br>Tipo: Lucha<br>Debilidad: Psíquico, volador y hada.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/068.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Machamp<span style="--clr:#241419"><br>Altura: 1,6 m<br>Peso: 130 kg<br>Sexo: ♀ ♂<br>Categoría: Superpoder<br>Habilidad: Agallas e indefenso<br>Tipo: Lucha<br>Debilidad: Psíquico, volador y hada.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/069.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Bellsprout<span style="--clr:#241419"><br>Altura: 0,7 m<br>Peso: 4,0 kg<br>Sexo: ♀ ♂<br>Categoría: Flor<br>Habilidad: Clorofila<br>Tipo: Planta y veneno <br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/070.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Weepinbell<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 6,4 kg<br>Sexo: ♀ ♂<br>Categoría: Matamoscas<br>Habilidad: Clorofila<br>Tipo: Planta y veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/071.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Victreebel<span style="--clr:#241419"><br>Altura: 1,7 m<br>Peso: 15,5 kg<br>Sexo: ♀ ♂<br>Categoría: Matamoscas<br>Habilidad: Clorofila<br>Tipo: Planta y veneno<br>Debilidad: Fuego, psíquico, volador e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/072.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Tentacool<span style="--clr:#241419"><br>Altura: 0,9 m<br>Peso: 45,5 kg<br>Sexo: ♀ ♂<br>Categoría: Medusa<br>Habilidad: Cuerpo puro<br>Tipo: Agua y veneno<br>Debilidad: Psíquico, eléctrico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/073.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Tentacruel<span style="--clr:#241419"><br>Altura: 1,6 m<br>Peso: 55 kg<br>Sexo: ♀ ♂<br>Categoría: Medusa<br>Habilidad: Cuerpo puro y lodo líquido<br>Tipo: Agua y veneno<br>Debilidad: Psíquico, eléctrico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/074.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Geodude<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 20 kg<br>Sexo: ♀ ♂<br>Categoría: Roca<br>Habilidad: Cabeza roca y robustez<br>Tipo: Roca y tierra<br>Debilidad: Acero, lucha, agua, hielo, planta y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/075.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Graveler<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 105 kg<br>Sexo: ♀ ♂<br>Categoría: Roca<br>Habilidad: Cabeza roca y robustez<br>Tipo: Roca y tierra<br>Debilidad: Acero, lucha, agua, hielo, planta y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/076.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Golem<span style="--clr:#241419"><br>Altura: 1,4 m<br>Peso: 300 kg<br>Sexo: ♀ ♂<br>Categoría: Megatón<br>Habilidad: Cabeza roca y robustez<br>Tipo: Roca y tierra<br>Debilidad: Acero, lucha, agua, hielo, planta y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/077.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Ponyta<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 30 kg<br>Sexo: ♀ ♂<br>Categoría: Caballo fuego<br>Habilidad: Fuga y absorbe fuego<br>Tipo: Fuego<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/078.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Rapidash<span style="--clr:#241419"><br>Altura: 1,7 m<br>Peso: 95 kg<br>Sexo: ♀ ♂<br>Categoría: Caballo fuego<br>Habilidad: Fuga y absorbe fuego<br>Tipo: Fuego<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/079.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Slowpoke<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 36 kg<br>Sexo: ♀ ♂<br>Categoría: Atontado<br>Habilidad: Despiste y ritmo propio<br>Tipo: Agua y psíquico<br>Debilidad: Fantasma, planta, eléctrico y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/080.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Slowbro<span style="--clr:#241419"><br>Altura: 1,6 m<br>Peso: 78,5 kg<br>Sexo: ♀ ♂<br>Categoría: Ermitaño<br>Habilidad: Despiste y ritmo propio<br>Tipo: Agua y psíquico<br>Debilidad: Fantasma, planta, eléctrico y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/081.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Magnemite<span style="--clr:#241419"><br>Altura: 0,3 m<br>Peso: 6,0 kg<br>Sexo: ♀ ♂<br>Categoría: Imán<br>Habilidad: Robustez e imán<br>Tipo: Eléctrico y acero<br>Debilidad: Fuego, lucha y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/082.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Magneton<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 60 kg<br>Sexo: ♀ ♂<br>Categoría: Imán<br>Habilidad: Robustez e imán<br>Tipo: Eléctrico y acero<br>Debilidad: Fuego, lucha y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/083.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Farfetch'd<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 15 kg<br>Sexo: ♀ ♂<br>Categoría: Pato salvaje<br>Habilidad: Vista lince y foco interno<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/084.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Doduo<span style="--clr:#241419"><br>Altura: 1,4 m<br>Peso: 39,2 kg<br>Sexo: ♀ ♂<br>Categoría: Ave gemela<br>Habilidad: Fuga y madrugar<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/085.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Dodrio<span style="--clr:#241419"><br>Altura: 1,8 m<br>Peso: 85,2 kg<br>Sexo: ♀ ♂<br>Categoría: Ave triple<br>Habilidad: Fuga y madrugar<br>Tipo: Normal y volador<br>Debilidad: Eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/086.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Seel<span style="--clr:#241419"><br>Altura: 1,1 m<br>Peso: 90 kg<br>Sexo: ♀ ♂<br>Categoría: León marino<br>Habilidad: Sebo e hidratación<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/087.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Dewgong<span style="--clr:#241419"><br>Altura: 1,7 m<br>Peso: 120 kg<br>Sexo: ♀ ♂<br>Categoría: León<br>Habilidad: Sebo e hidratación<br>Tipo: Agua e hielo<br>Debilidad: Planta, eléctrico, lucha y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/088.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Grimer<span style="--clr:#241419"><br>Altura: 0,9 m<br>Peso: 30 kg<br>Sexo: ♀ ♂<br>Categoría: Lodo<br>Habilidad: Hedor y viscosidad<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/089.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Muk<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 30 kg<br>Sexo: ♀ ♂<br>Categoría: Lodo<br>Habilidad: Hedor y viscosidad<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/090.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Bulbasaur<span style="--clr:#241419"><br>Altura: 0,3 m<br>Peso: 4,0 kg<br>Sexo: ♀ ♂<br>Categoría: Bivalvo<br>Habilidad: Caparazón y encadenado<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/091.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Cloyster<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 132 kg<br>Sexo: ♀ ♂<br>Categoría: Bilvalvo<br>Habilidad: Caparazón y encadenado<br>Tipo: Agua e hielo<br>Debilidad: Planta, eléctrico, lucha y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/092.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Gastly<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 0,1 kg<br>Sexo: ♀ ♂<br>Categoría: Gas<br>Habilidad: Levitación<br>Tipo: Fantasma y veneno<br>Debilidad: Fantasma, siniestro, psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/093.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Haunter<span style="--clr:#241419"><br>Altura: 1,6 m<br>Peso: 0,1 kg<br>Sexo: ♀ ♂<br>Categoría: Gas<br>Habilidad: Levitación<br>Tipo: Fantasma y veneno<br>Debilidad: Fantasma, siniestro, psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/094.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Gengar<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 40,5 kg<br>Sexo: ♀ ♂<br>Categoría: Sombra<br>Habilidad: Cuerpo maldito<br>Tipo: Fantasma y veneno<br>Debilidad: Fantasma, siniestro, psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/095.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Onix<span style="--clr:#241419"><br>Altura: 8,8 m<br>Peso: 210 kg<br>Sexo: ♀ ♂<br>Categoría: Serpiente roca<br>Habilidad: Cabeza roca y robustez<br>Tipo: Roca y tierra<br>Debilidad: Acero, lucha, agua, hielo, planta y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/096.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Drowzee<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 32,4 kg<br>Sexo: ♀ ♂<br>Categoría: Hipnosis<br>Habilidad: Insomnio y alerta<br>Tipo: Psíquico<br>Debilidad: Fantasma, siniestro y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/097.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Hypno<span style="--clr:#241419"><br>Altura: 1,6 m<br>Peso: 75,6 kg<br>Sexo: ♀ ♂<br>Categoría: Hipnosis<br>Habilidad: Insomnio y alerta<br>Tipo: Psíquico<br>Debilidad: Fantasma, siniestro y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/098.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Krabby<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 6,5 kg<br>Sexo: ♀ ♂<br>Categoría: Cangrejo<br>Habilidad: Caparazón y corte fuerte<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/099.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Kingler<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 60 kg<br>Sexo: ♀ ♂<br>Categoría: Tenaza<br>Habilidad: Caparazón y corte fuerte<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/100.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Voltorb<span style="--clr:#241419"><br>Altura: 0,5 m<br>Peso: 10,4 kg<br>Sexo: ♀ ♂<br>Categoría: Bola<br>Habilidad: Electricidad estática y insonorizar<br>Tipo: Eléctrico<br>Debilidad: Tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/101.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Electrode<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 66,6 kg<br>Sexo: ♀ ♂<br>Categoría: Bola<br>Habilidad: Electricidad estática e insonoriza<br>Tipo: Eléctrico<br>Debilidad: Tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/102.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Exeggecute<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 2,5 kg<br>Sexo: ♀ ♂<br>Categoría: Huevo<br>Habilidad: Clorofila<br>Tipo: Planta y psíquico<br>Debilidad: Fantasma, fuego, volador, hielo, siniestro, veneno y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/103.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Exeggutor<span style="--clr:#241419"><br>Altura: 2,0 m<br>Peso: 120 kg<br>Sexo: ♀ ♂<br>Categoría: Coco<br>Habilidad: Clorofila<br>Tipo: Planta y psíquico<br>Debilidad: Fantasma, fuego, volador, hielo, siniestro, veneno y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#784E2E, #B99360, #C5B78F)">
+        <div class="img1">
+            <img src="./img/104.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Cubone<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 6,5 kg<br>Sexo: ♀ ♂<br>Categoría: Solitario<br>Habilidad: Cabeza roca y pararrayos<br>Tipo: Tierra<br>Debilidad: Agua, planta e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#C5B78F, #B99360, #784E2E)">
+        <div class="img1">
+            <img src="./img/105.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Marowak<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 45 kg<br>Sexo: ♀ ♂<br>Categoría: Apilahueso<br>Habilidad: Cabeza roca y pararrayos<br>Tipo: Tierra<br>Debilidad: Agua, planta e hielo.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/106.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Hitmonlee<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 49,8 kg<br>Sexo: ♀ ♂<br>Categoría: Patada<br>Habilidad: flexibilidad y audaz<br>Tipo: Lucha<br>Debilidad: Psíquico, volador y hada.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/107.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Hitmonchan<span style="--clr:#241419"><br>Altura: 1,4 m<br>Peso: 50,2 kg<br>Sexo: ♀ ♂<br>Categoría: Puñetazo<br>Habilidad: Vista lince y puñe férreo<br>Tipo: Lucha<br>Debilidad: Psíquico, volador y hada.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/108.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Lickitung<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 65,5 kg<br>Sexo: ♀ ♂<br>Categoría: Lametazo<br>Habilidad: Despiste y ritmo propio<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/109.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Koffing<span style="--clr:#241419"><br>Altura: 0,6 m<br>Peso: 1,0 kg<br>Sexo: ♀ ♂<br>Categoría: Gas venenoso<br>Habilidad: Levitación<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/110.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Weezing<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 9,5 kg<br>Sexo: ♀ ♂<br>Categoría: Gas venenoso<br>Habilidad: Levitación y gas reactivo<br>Tipo: Veneno<br>Debilidad: Psíquico y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/111.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Rhyhorn<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 115 kg<br>Sexo: ♀ ♂<br>Categoría: Clavos<br>Habilidad: Cabeza roca y pararrayos<br>Tipo: Tierra y roca<br>Debilidad: Acero, hielo, agua, lucha, planta y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/112.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Rhydon<span style="--clr:#241419"><br>Altura: 1,9 m<br>Peso: 120 kg<br>Sexo: ♀ ♂<br>Categoría: Taladro<br>Habilidad: Cabeza roca y pararrayos<br>Tipo: Tierra y roca<br>Debilidad:Acero, hielo, agua, lucha, planta y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/113.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Chansey<span style="--clr:#241419"><br>Altura: 1,1 m<br>Peso: 34,6 kg<br>Sexo: ♀ ♂<br>Categoría: Huevo<br>Habilidad: Cura natural y dicha<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/114.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Tangela<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 35 kg<br>Sexo: ♀ ♂<br>Categoría: Enredadera<br>Habilidad: Clorofila y defensa hoja<br>Tipo: Planta<br>Debilidad: Fuego, volador, hielo, veneno y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/115.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Kangaskhan<span style="--clr:#241419"><br>Altura: 2,2 m<br>Peso: 80 kg<br>Sexo: ♀ ♂<br>Categoría: Maternal<br>Habilidad: Madrugar y intrépido<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/116.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Horsea<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 8,0 kg<br>Sexo: ♀ ♂<br>Categoría: Dragón<br>Habilidad: Nado rápido y francotirador<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/117.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Seadra<span style="--clr:#241419"><br>Altura: 1,2 m<br>Peso: 25 kg<br>Sexo: ♀ ♂<br>Categoría: Dragón<br>Habilidad: Punto tóxico y francotirador<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/118.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Goldeen<span style="--clr:#241419"><br>Altura: 0,6 m<br>Peso: 15 kg<br>Sexo: ♀ ♂<br>Categoría: Pez color<br>Habilidad: Nado rápido y velo agua<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/119.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Seaking<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 39 kg<br>Sexo: ♀ ♂<br>Categoría: Pez color<br>Habilidad: Nado rápido y velo agua<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/120.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Staryu<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 34,5 kg<br>Sexo: ♀ ♂<br>Categoría: Estrella<br>Habilidad: Cura natural e iluminación<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/121.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Starmie<span style="--clr:#241419"><br>Altura: 1,1 m<br>Peso: 80 kg<br>Sexo: ♀ ♂<br>Categoría: Misterioso<br>Habilidad: Cura natural e iluminación<br>Tipo: Agua y psíquico<br>Debilidad: Fantasma, siniestro, planta,eléctrico y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/122.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Mr. Mime<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 54 kg<br>Sexo: ♀ ♂<br>Categoría: Barrera<br>Habilidad: insonorizar y filtro<br>Tipo: Psíquico y hada<br>Debilidad: Fantasma, acero y veneno.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/123.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Scyther<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 56 kg<br>Sexo: ♀ ♂<br>Categoría: Mantis<br>Habilidad: Enjambre y experto<br>Tipo: Bicho y volador<br>Debilidad: Fuego, volador, eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/124.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Jynx<span style="--clr:#241419"><br>Altura: 1,4 m<br>Peso: 40 kg<br>Sexo: ♀ ♂<br>Categoría: Forma humana<br>Habilidad: Despiste y alerta<br>Tipo: Hielo y psíquico<br>Debilidad: Acero, fantasma, fuego, siniestro, roca y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/125.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Electabuzz<span style="--clr:#241419"><br>Altura: 1,1 m<br>Peso: 30 kg<br>Sexo: ♀ ♂<br>Categoría: Eléctrico<br>Habilidad: Electricidad estática<br>Tipo: Eléctrico<br>Debilidad: Tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/126.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Magmar<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 44 kg<br>Sexo: ♀ ♂<br>Categoría: Escupefuego<br>Habilidad: Cuerpo llama<br>Tipo: Fuego<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/127.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Pinsir<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 55 kg<br>Sexo: ♀ ♂<br>Categoría: Escarabajo<br>Habilidad: Corte fuerte y rompemoldes<br>Tipo: Bicho<br>Debilidad: Fuego, volador y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/128.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Tauros<span style="--clr:#241419"><br>Altura: 1,4 m<br>Peso: 88 kg<br>Sexo: ♀ ♂<br>Categoría: Toro bravo<br>Habilidad: Imitación e irascible<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/129.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Magikarp<span style="--clr:#241419"><br>Altura: 0,9 m<br>Peso: 10 kg<br>Sexo: ♀ ♂<br>Categoría: Pez<br>Habilidad: Nado rápido<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/130.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Gyarados<span style="--clr:#241419"><br>Altura: 6,5 m<br>Peso: 235 kg<br>Sexo: ♀ ♂<br>Categoría: Arocidad<br>Habilidad: Intimidación<br>Tipo: Agua y volador<br>Debilidad: Eléctrico y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/131.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Lapras<span style="--clr:#241419"><br>Altura: 1,5 m<br>Peso: 220 kg<br>Sexo: ♀ ♂<br>Categoría: Transporte<br>Habilidad: Absorbe agua y caparazón<br>Tipo: Agua e hielo<br>Debilidad: Planta, eléctrico, lucha y roca</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/132.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Ditto<span style="--clr:#241419"><br>Altura: 0,3 m<br>Peso: 4,0 kg<br>Sexo: ♀ ♂<br>Categoría: Transformación<br>Habilidad: Flexibilidad<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/133.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Eevee<span style="--clr:#241419"><br>Altura: 0,3 m<br>Peso: 6,5 kg<br>Sexo: ♀ ♂<br>Categoría: Evolución<br>Habilidad: Fuga adaptable<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/134.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Vaporeon<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 29 kg<br>Sexo: ♀ ♂<br>Categoría: Burbuja<br>Habilidad: Absorbe agua<br>Tipo: Agua<br>Debilidad: Planta y eléctrico.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/135.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Jolteon<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 24 kg<br>Sexo: ♀ ♂<br>Categoría: Relámpago<br>Habilidad: Absorbe electricidad<br>Tipo: Eléctrico<br>Debilidad: Tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/136.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Flareon<span style="--clr:#241419"><br>Altura: 0,9 m<br>Peso: 25 kg<br>Sexo: ♀ ♂<br>Categoría: Llama<br>Habilidad: Absorbe fuego<br>Tipo: Fuego<br>Debilidad: Agua, tierra y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/137.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Porygon<span style="--clr:#241419"><br>Altura: 0,8 m<br>Peso: 36 kg<br>Sexo: ♀ ♂<br>Categoría: Virtual<br>Habilidad: Rastro y descarga<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/138.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Omanyte<span style="--clr:#241419"><br>Altura: 0,4 m<br>Peso: 7,5 kg<br>Sexo: ♀ ♂<br>Categoría: Espiral<br>Habilidad: Caparazón y nado rápido<br>Tipo: Roca y agua<br>Debilidad: Planta, eléctrico, lucha y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/139.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Omastar<span style="--clr:#241419"><br>Altura: 1,0 m<br>Peso: 35 kg<br>Sexo: ♀ ♂<br>Categoría: Espiral<br>Habilidad: Caparazón y nado rápido<br>Tipo: Rocas y agua<br>Debilidad: Planta, eléctrico, lucha y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/140.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Kabuto<span style="--clr:#241419"><br>Altura: 0,5 m<br>Peso: 11 kg<br>Sexo: ♀ ♂<br>Categoría: Armazón<br>Habilidad: Nado rápido y armadura batalla<br>Tipo: Roca y agua<br>Debilidad: Planta, eléctrico, lcuha y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/141.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Kabutops<span style="--clr:#241419"><br>Altura: 1,3 m<br>Peso: 40 kg<br>Sexo: ♀ ♂<br>Categoría: Armazón<br>Habilidad: Nado rápido y armadura batalla<br>Tipo: Roca y agua<br>Debilidad: Planta, eléctrico, lucha y tierra.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/142.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Aerodactyl<span style="--clr:#241419"><br>Altura: 1,8 m<br>Peso: 59 kg<br>Sexo: ♀ ♂<br>Categoría: Fósil<br>Habilidad: Cabeza roca y presión<br>Tipo: Roca y volador<br>Debilidad: Acero, agua, eléctrico, hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/143.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Snorlax<span style="--clr:#241419"><br>Altura: 2,1 m<br>Peso: 460 kg<br>Sexo: ♀ ♂<br>Categoría: Dormir<br>Habilidad: Sebo e inmunidad<br>Tipo: Normal<br>Debilidad: Lucha.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/144.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Articuno<span style="--clr:#241419"><br>Altura: 1,7 m<br>Peso: 55 kg<br>Sexo: ♀ ♂<br>Categoría: Congelar<br>Habilidad: Presión<br>Tipo: Hielo y volador<br>Debilidad: Acero, fuego, eléctrico y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/145.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Zapdos<span style="--clr:#241419"><br>Altura: 1,6 m<br>Peso: 52 kg<br>Sexo: ♀ ♂<br>Categoría: Eléctrico<br>Habilidad: Presión<br>Tipo: Eléctrico y volador<br>Debilidad: Hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/146.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Moltres<span style="--clr:#241419"><br>Altura: 2,0 m<br>Peso: 60 kg<br>Sexo: ♀ ♂<br>Categoría: Llama<br>Habilidad: Presión<br>Tipo: Fuego y volador<br>Debilidad: Agua, eléctrico y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/147.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Dratini<span style="--clr:#241419"><br>Altura: 1,8 m<br>Peso: 3,3 kg<br>Sexo: ♀ ♂<br>Categoría: Dragón<br>Habilidad: Mudar<br>Tipo: Dragón<br>Debilidad: Hada, hielo y dragón.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/148.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Dragonair<span style="--clr:#241419"><br>Altura: 4,0 m<br>Peso: 16 kg<br>Sexo: ♀ ♂<br>Categoría: Dragón<br>Habilidad: Mudar<br>Tipo: Dragón<br>Debilidad: Hada, hielo y dragón.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#60587B, #78CCE0, #CD989D, #FCD671, #D1A574)">
+        <div class="img1">
+            <img src="./img/149.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Dragonite<span style="--clr:#241419"><br>Altura: 2,2 m<br>Peso: 210 kg<br>Sexo: ♀ ♂<br>Categoría: Dragón<br>Habilidad: Foco interno<br>Tipo: Dragón y volador<br>Debilidad: Hada, dragón, <br>hielo y roca.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="--clr:linear-gradient(#9FACE6, #DDD6F3, #A9C9FF)">
+        <div class="img1">
+            <img src="./img/150.png">
+        </div>
+        <div class="datos">
+            <div class="contenido">
+                <h2 style="--clr:#C87F9F">Mewtwo<span style="--clr:#241419"><br>Altura: 2,0 m<br>Peso: 122 kg<br>Sexo: ♀ ♂<br>Categoría: Genético<br>Habilidad: Presión<br>Tipo: Psíquico<br>Debilidad: Fantasma, siniestro y bicho.</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+<!--Boton ir arriba-->
+<div id="button-up">
+    <i class="fas fa-caret-up"></i>
+</div>
+
+<script src="arriba.js"></script>
+</body>
+</html>

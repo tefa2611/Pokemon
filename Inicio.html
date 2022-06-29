@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="shortcut icon" href="./img/logomini.png">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li class="list" style="--clr:#A9C9FF">
+                <a href="./index.html">
+                    <span class="icono"><ion-icon name="game-controller-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#FAACA8">
+                <a href="./pokedex.html">
+                    <span class="icono"><ion-icon name="id-card-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list active" style="--clr:#DDD6F3">
+                <a href="./Inicio.html"">
+                    <span class="icono"><ion-icon name="home-outline"></ion-icon></span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+       </div>
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    
+    <script>
+        const list = document.querySelectorAll('.list'); 
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active')
+        } 
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
+    <section>
+        <div class="content">
+            <h1>Bienvenido al juego Pokémon</h1>
+            <p>Querido Klaus, he creado esta página para tí, con el fin de que puedas jugar 🎮 a atrapar a tus pokemos favoritos. También, he dispuesto una sección en la que podrás ver las tarjetas de 150 pokemos con la información necesaria para que aprendas más sobre ellos 📚. He puesto mucho esfuerzo en este trabajo 💪, espero que te guste mucho!
+            Con amor, mamá 😘 
+            </p>
+            <a href="./index.html">Empezar</a>
+        </div>
+        <div class="img">
+            <img src="./img/inicio.png">
+        </div>
+    </section>
+ 
+</body>
+</html>

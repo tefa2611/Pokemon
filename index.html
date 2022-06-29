@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Pokémon</title>
+    <link rel="shortcut icon" href="./img/logomini.png">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="list active" style="--clr:#A9C9FF">
+                <a href="./index.html">
+                    <span class="icono"><ion-icon name="game-controller-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#FAACA8">
+                <a href="./pokedex.html">
+                    <span class="icono"><ion-icon name="id-card-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#DDD6F3">
+                <a href="./Inicio.html"">
+                    <span class="icono"><ion-icon name="home-outline"></ion-icon></span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+       </div>
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    
+    <script>
+        const list = document.querySelectorAll('.list'); 
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active')
+        } 
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
+<div class="wrapper">
+    <div class="contenedor">
+
+        <div class="imagen Charmander">
+            <input type="checkbox" id="activar">
+            <label for="activar"><img src="./img/004.png"></label>
+        </div>
+
+        <div class="imagen Cubone">
+            <input type="checkbox" id="activar1">
+            <label for="activar1"><img src="./img/104.png"></label>
+        </div>
+
+        <div class="imagen Butterfree">
+            <input type="checkbox" id="activar2">
+            <label for="activar2"><img src="./img/012.png"></label>
+        </div>
+
+        <div class="imagen Mewtwo">
+            <input type="checkbox" id="activar3">
+            <label for="activar3"><img src="./img/150.png"></label>
+        </div>
+    
+        <div class="mon-1">
+            <div class="zigzag"></div>
+        </div>
+    
+        <div class="mon-2">
+            <div class="zigzag"></div>  
+        </div>
+    
+        <div class="mon-3">
+            <div class="zigzag"></div>
+        </div>
+    
+        <div class="mon-4">
+            <div class="zigzag"></div>
+        </div>
+    
+        <div class="Titulo">
+            <h1>Atrapa a todos los pokémons !</h1>
+        </div>
+    
+        <h3 class="total-count"><br></h3>
+    </div>
+
+    <div class="contenedores contenedor-2">
+        <div class="box" style="--clr:linear-gradient(#E16E40, #EBAB7E, #F3E5CA)">
+            <div class="imgBx">
+                <img src="./img/004.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Charmander</h2>
+                    <p>Dicen que cuando llueve le sale vapor de la punta de la cola.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box" style="--clr:linear-gradient(#60587B, #D9776E, #90B7C6)">
+            <div class="imgBx">
+                <img src="./img/012.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Butterfree</h2>
+                    <p>Aletea para lanzar al aire sus escamas muy tóxicas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedores contenedor-3">
+        <div class="box" style="--clr:linear-gradient(#784E2E, #B99360, #C5B78F)">
+            <div class="imgBx">
+                <img src="./img/104.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Cubone</h2>
+                    <p>Cuando llora por su madre fallecida, este resuena en el cráneo que lleva.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box" style="--clr:linear-gradient(#9FACE6, #DDD6F3, #A9C9FF)">
+            <div class="imgBx">
+                <img src="./img/150.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Mewtwo</h2>
+                    <p>Su ADN es similar que el de Mew. Pero, su tamaño y carácter son muy diferentes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+</body>
+</html>
